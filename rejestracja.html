@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>PsychoGabinet - Logowanie</title>
+    <!-- Custom CSS (includes Bootstrap 5.0)-->
+    <link href="styles.css" rel="stylesheet" />
+    <style>
+      @import url("https://fonts.cdnfonts.com/css/work-sans");
+    </style>
+  </head>
+  <body>
+    <script>
+      function hide_fields(x) {
+        if (document.getElementById("placowka").checked == true &&x==2) {
+            document.getElementById("allframes").style.display="none";
+            document.getElementById("nazwa_poradni").style.display="block";
+        }
+        else if (document.getElementById("pacjent").checked == true || document.getElementById("specjalista").checked == true &&x==1) {
+            document.getElementById("allframes").style.display="block";
+            document.getElementById("nazwa_poradni").style.display="none";
+        }
+      }
+    </script>
+    <div class="login_container">
+      <div class="input_container">
+        <div class="image">
+          <img
+            src="Psychogabinet_logo.png"
+            alt="Psychogabinet"
+            height="200"
+            width="300"
+          />
+        </div>
+        <br />
+        <h5 class="card-title fw-light fs-2 fw-bold">Zarejestruj się</h5>
+        <div class="radio_buttons">
+          <div>
+            <input
+              type="radio"
+              id="pacjent"
+              name="typ"
+              value="Pacjent"
+              class="form-check-input"
+              onclick="hide_fields(1)"
+            />
+            <label for="pacjent"> Pacjent </label>
+          </div>
+          <div class="mid_button">
+            <input
+              type="radio"
+              id="specjalista"
+              name="typ"
+              value="specjalista"
+              class="form-check-input"
+              onclick="hide_fields(1)"
+            />
+            <label for="specjalista"> Specjalista </label>
+          </div>
+          <div class="last_button">
+            <input
+              type="radio"
+              id="placowka"
+              name="typ"
+              value="placowka"
+              class="form-check-input"
+              onclick="hide_fields(2)"
+            />
+            <label for="placowka"> Placówka </label>
+          </div>
+        </div>
+        <form>
+          <div class="nazwa_poradni" id="nazwa_poradni">
+            <input
+              type="text"
+              class="form-control"
+              id="nazwaporadni"
+              placeholder="Nazwa Poradni"
+            />
+          </div>
+          <div class="frame_container" id="allframes">
+            <div class="input">
+              <input
+                type="text"
+                class="form-control"
+                id="imie"
+                placeholder="Imię"
+              />
+            </div>
+            <div class="input">
+              <input
+                type="text"
+                class="form-control"
+                id="nazwisko"
+                placeholder="Nazwisko"
+              />
+            </div>
+            <div class="input">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Email"
+              />
+            </div>
+            <div class="input">
+              <input
+                type="tel"
+                class="form-control"
+                id="telefon"
+                placeholder="Nr telefonu"
+              />
+            </div>
+            <div class="input">
+              <input
+                type="text"
+                class="form-control"
+                id="adres"
+                placeholder="Adres"
+              />
+            </div>
+            <div class="input">
+              <input
+                type="text"
+                class="form-control"
+                id="kod"
+                placeholder="Kod pocztowy"
+              />
+            </div>
+            <div class="input">
+              <input
+                type="text"
+                class="form-control"
+                id="miasto"
+                placeholder="Miasto"
+              />
+            </div>
+            <div class="input">
+              <input
+                type="text"
+                class="form-control"
+                id="haslo"
+                placeholder="Hasło"
+              />
+            </div>
+            <div class="input">
+              <input
+                type="password"
+                class="form-control"
+                id="CPassword"
+                placeholder="Potwierdź hasło"
+              />
+            </div>
+          </div>
+          <div class="checkbox_container">
+            <div class="checkbox">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="rules"
+                id="rules"
+              />
+              <label class="form-check-label" for="rules">
+                Akceptuję regulamin świadczenia usług i zapoznałam/em się z
+                informacją o danych osobowych.
+              </label>
+            </div>
+          </div>
+          <div class="register_button">
+            <button type="submit">Zarejestruj się</button>
+          </div>
+          <div class="account">
+            <p>Masz już konto?</p>
+            <a href="./login-page.html" target="_blank">Zaloguj się</a>
+          </div>
+          <div class="site">
+            <a href="">Powrót do strony głównej</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
