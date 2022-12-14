@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>PsychoGabinet/Cennik</title>
+    <!-- Custom CSS (includes Bootstrap 5.0)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container" id="wrapper" style ="width: 100%; max-width:100%">
+        <div class = "row" style ="height: 100%">
+            <!-- Sidebar-->
+            <div class="col-12 col-md-2 sidebar">
+            <div class="text-center"></div>
+            <img src="PsychoGabinet.jpg.png" alt="Logo">
+            <ul>
+                <ol><a href = "file:///C:/Users/ttrem/Desktop/project/after-login.html"  target = "_blank">Wizyty</a></ol>
+                <hr class="menu">
+                <ol><a href = "file:///C:/Users/ttrem/Desktop/project/pacjenci_specjalista.html" tagret = "_blank">Pacjenci</a></ol>
+                <hr class="menu">
+                <ol><a href = "file:///C:/Users/ttrem/Desktop/project/czat_specjalista.html" target = "_blank">Czat z pacjentem</a></ol> 
+                <hr class="menu">
+                <ol><a href = "file:///C:/Users/ttrem/Desktop/project/m_info_specjalista.html"  target = "_blank">Moje informacje</a></ol>
+                <hr class="menu">
+                <ol><a href = "file:///C:/Users/ttrem/Desktop/project/kalendarz.html"  target = "_blank">Kalendarz</a></ol>
+                <hr class="menu">
+                <ol><a href = "file:///C:/Users/ttrem/Desktop/project/cennik.html"  target = "_blank">Cennik</a></ol>
+                <hr class="menu">
+            <div class="exit">
+                <ol>Strona Główna</ol>
+                <hr class="menu">
+                <ol>Wyloguj się</ol>
+                <hr class="menu">
+            </div>
+            </ul>
+            </div>
+            <!-- Sidebar - end -->
+            <!-- Panel  -->
+            <div class="col-12 col-md-10 panel-content">
+            <div id="page-content-wrapper">
+                <!-- Page content-->
+                <button type = "submit">Aktualizuj</button> 
+                <div class="container-fluid">
+                    <h1 class="mt-4">Cena za wizytę</h1>
+                    <hr>
+                    <div class = "cennik">
+                    <form style = "margin-top: 50px">
+                        <label for = "specjalizacje" class = "m_info">Specjalizacja</label>
+                        <br>
+                        <br>
+                        <select name = "specjalizacje" id = "specjalizacje"  style="width: 400px" size="8" multiple>
+                            <option value = "p.kliniczny">Psycholog kliniczny</option>
+                            <option value = "psychoterap">Psychoterapeuta</option>
+                            <option value = "traumatolog">Traumatolog</option>
+                            <option value = "p.edukacyjny">Psycholog edukacyjny</option>
+                            <option value = "p.rozwoju">Psycholog rozwoju</option>
+                            <option value = "seksuolog">Seksuolog</option>
+                            <option value = "p.sportu">Psycholog sportu</option>
+                            <option value = "p.kryminalny">Psycholog kryminalny</option>
+                            <option value = "neuropsycholog">Neuropsycholog</option>
+                        </select>
+                </section>
+                </form>
+                <input type = "number" id = "cennik" min = "100" max = "200" step = "10" required autofocus >
+                <br>
+                <br> 
+                </div>
+                </div>
+            </div>
+            </div>
+            <!-- Panel - end  -->
+        </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JQuery CDN-->
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <!-- Custom JS-->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
