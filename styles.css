@@ -685,7 +685,7 @@ progress {
   }
 }
 .row {
-  --bs-gutter-x: 2rem;
+  --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
@@ -4053,7 +4053,7 @@ textarea.form-control-lg {
   align-items: center;
   justify-content: space-between;
   padding-top: 0.5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 0.5rem;
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -11318,9 +11318,10 @@ textarea.form-control-lg {
 /*  Style własne  */
 .banner-container {
   border-bottom: 3px solid #5FA8D3;
-  height: 550px;  /*  wartość przykładowa  */
+  height: 100px;  /*  wartość przykładowa  */
   margin: 50px 0 0 0;  /*  wartość przykładowa  */
 }
+
 
 .btn-active {
   color: #fff;
@@ -11336,7 +11337,7 @@ textarea.form-control-lg {
 
 .footer {
   position: absolute;
-  bottom: -40em;
+  bottom: 0px;
   width: 100%;
 }
 
@@ -11366,24 +11367,142 @@ textarea.form-control-lg {
 -moz-box-shadow: 10px 0px 5px 0px rgba(177,177,177,0.75);
 z-index: 1;
 }
-
-.ser {
-  position: absolute;
-  margin: 250px 100px 200px 180px;
-  width: 500px;
-  height: 100px;
+.login_container {
+  padding-top: 30px;
+  margin-top: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 500px;
+  width: 100%;
+  font-family: 'Work Sans', sans-serif;
+}
+.input_container {
+  margin-top: 50px;
+}
+.input_email {
+  margin-bottom: 10px ;
+  margin-top: 25px;
+}
+.input_password {
+  margin-bottom: 25px;
+}
+.image img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.input_email input[type=email] {
+  border: 0.084rem solid #5FA8D3;
+  border-radius: 0;
+} 
+.input_password input[type=password] {
+  border: 0.084rem solid #5FA8D3;
+  border-radius: 0;
+} 
+.checkbox_container {
+  display: flex;
+  flex-direction: row;
+}
+.text a {
+  font-weight: bold;
+  color: #01295F;
+  text-decoration: none;
+  
+}
+.text {
+  margin-left: auto;
+}
+.checkbox input{
+  margin-right: 10px;
+  border: 0.084rem solid #5FA8D3;
+  border-radius: 0 !important;
+  padding: 10px 10px;
+}
+.checkbox {
+  display: flex;
 }
 
-.dow {
-  margin-top: 0px;
+.login_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
 }
+.login_button button, .register_button button {
+  padding: 10px 100px;
+  background-color: #5FA8D3;
+  color: white;
+  border: none; 
+}
+.login_button button:hover {
+  background-color: #56A4D1;
+}
+.account {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.account p {
+  margin-top: 10px;
+}
+.account a {
+  margin-top: -5px;
+  margin-left: 5px;
+  text-decoration: none;
+  color: #01295F;
+  font-weight: bold;
+}
+.site {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.site a {
+  margin-top: -15px;
+  text-decoration: none;
+  color: #01295F;
+  font-weight: bold;
+}
+.login {
+  color:#96ACB8 ;
+  font-size: 20px;
+  font-weight: 500;
+}
+.radio_buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 25px;
 
+}
+.last_button {
+  text-align: right;
 
-
-
-
-
-
-
-
-
+}
+.mid_button {
+  text-align: center;
+}
+.input input[type=email], input[type=text], input[type=tel], input[type=password] {
+  border: 0.084rem solid #5FA8D3;
+  border-radius: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.register_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+.radio_buttons input[type=radio]:checked{
+  height: 20px;
+  width: 20px;
+  background-color: #5FA8D3;
+}
+.radio_buttons label {
+  font-size: 18px;
+  font-weight: bold;
+}
+.nazwa_poradni {
+  display: none;
+}
