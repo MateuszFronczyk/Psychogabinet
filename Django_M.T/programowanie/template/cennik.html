@@ -1,0 +1,29 @@
+{% extends "after_login_core.html" %}
+{% block content %}
+                <button type = "submit">Aktualizuj</button> 
+                <div class="container-fluid">
+                    <h1 class="mt-4">Cena za wizytę</h1>
+                    <hr>
+                    <div class = "cennik">
+                    <form style = "margin-top: 50px">
+                        <label for = "specjalizacje" class = "m_info">Specjalizacja</label>
+                        <br>
+                        <select name = "specjalizacje" id = "specjalizacje"  style="width: 400px" >
+                            <option value = "p.kliniczny">Psycholog kliniczny</option>
+                            <option value = "psychoterap">Psychoterapeuta</option>
+                            <option value = "traumatolog">Traumatolog</option>
+                            <option value = "p.edukacyjny">Psycholog edukacyjny</option>
+                            <option value = "p.rozwoju">Psycholog rozwoju</option>
+                            <option value = "seksuolog">Seksuolog</option>
+                            <option value = "p.sportu">Psycholog sportu</option>
+                            <option value = "p.kryminalny">Psycholog kryminalny</option>
+                            <option value = "neuropsycholog">Neuropsycholog</option>
+                        </select>
+                </section>
+                </form>
+                <br>
+                <input type = "number" id = "cennik" min = "100" max = "200" step = "10" required autofocus >
+                <br>
+                <br> 
+                </div>
+{% endblock %}
